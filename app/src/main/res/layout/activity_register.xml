@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/material_grey_100"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <ImageView
+        android:id="@+id/back_register_image"
+        android:padding="5dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/back"/>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:id="@+id/username_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="181dp"
+        android:background="@drawable/edit_text_login"
+        android:ems="10"
+        android:hint="@string/username_hint"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+    <TextView
+        android:id="@+id/hint1"
+        android:background="@color/colorSplitWhite"
+        android:layout_below="@+id/username_register"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <EditText
+        android:id="@+id/password_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/hint1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_login"
+        android:ems="10"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+    <TextView
+        android:id="@+id/hint2"
+        android:background="@color/colorSplitWhite"
+        android:layout_below="@+id/password_register"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <EditText
+        android:id="@+id/confirm_password_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/hint2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_login"
+        android:ems="10"
+        android:hint="确认密码"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <TextView
+        android:id="@+id/hint5"
+        android:background="@color/colorSplitWhite"
+        android:layout_below="@+id/confirm_password_register"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    
+    <EditText
+        android:id="@+id/phone_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/hint5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_login"
+        android:ems="10"
+        android:hint="@string/phoneNum_hint"
+        android:inputType="phone"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <TextView
+        android:id="@+id/hint3"
+        android:background="@color/colorSplitWhite"
+        android:layout_below="@+id/phone_register"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <EditText
+        android:id="@+id/verify_code_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/hint3"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="180dp"
+        android:background="@drawable/edit_text_login"
+        android:ems="10"
+        android:hint="@string/code_hint"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <Button
+        android:id="@+id/get_verify_code_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/phone_register"
+        android:layout_alignBottom="@+id/verify_code_register"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/btn_solid"
+        android:text="@string/get_code_hint"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/hint4"
+        android:layout_width="164dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/verify_code_register"
+        android:layout_alignEnd="@+id/verify_code_register"
+        android:layout_marginEnd="0dp"
+        android:background="@color/colorSplitWhite" />
+
+    <CheckBox
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/checkbox_status"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_size_25"
+        android:layout_below="@id/hint4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:textSize="@dimen/font_size_20"
+        android:text="卖家" />
+
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/checkbox_status"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_solid"
+        android:text="@string/register_hint"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+</RelativeLayout>

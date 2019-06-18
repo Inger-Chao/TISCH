@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/item_image_shop_food"
+        android:layout_width="@dimen/dimen_size_80"
+        android:layout_height="@dimen/dimen_size_50"
+        android:layout_margin="@dimen/dimen_size_8"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_image_shop_food"
+        android:layout_toEndOf="@id/item_image_shop_food"
+        android:layout_margin="@dimen/spacing_minor"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_product_name"
+                android:text="Name"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#464646"
+                />
+
+            <TextView
+                android:id="@+id/txt_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@+id/txt_product_name"
+                android:layout_toRightOf="@id/txt_product_name"
+                android:gravity="right"
+                android:text="Price"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/txt_product_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="@dimen/dimen_size_10"
+                android:text="Description"
+                android:textColor="#8D8D8D"
+                android:textSize="12sp" />
+
+
+            <com.inger.tisch.widgets.ShoppingCountView
+                android:id="@+id/shopping_count_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+                app:scv_add_btn_bg_color="@color/colorPrimary"
+                app:scv_add_btn_text_color="@color/white"
+                app:scv_minus_btn_bg_color="@color/white"
+                app:scv_minus_btn_text_color="@color/colorPrimary" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_size"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider"
+        />
+
+</RelativeLayout>

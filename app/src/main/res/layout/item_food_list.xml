@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/dimen_size_15"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/food_item_image"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="@dimen/dimen_size_80"
+        android:layout_height="@dimen/dimen_size_80"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/food_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="@dimen/dimen_size_10"
+        android:layout_toEndOf="@+id/food_item_image"
+        android:text="@string/fast_food"
+        android:textSize="@dimen/font_size_18"
+        android:textStyle="bold" />
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/food_item_price"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/food_item_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:text="￥80.00" />
+
+    <TextView
+        android:id="@+id/food_item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food_item_name"
+        android:layout_alignStart="@+id/food_item_name"
+        android:layout_marginTop="11dp"
+        android:gravity="left"
+        android:text="@string/me_description" />
+
+
+</RelativeLayout>

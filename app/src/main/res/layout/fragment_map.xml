@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_gravity="right|bottom"
+        android:id="@+id/add"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ic_add_circle_map_black_24dp"
+        />
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+    </com.amap.api.maps.MapView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_size_50"
+        android:paddingLeft="@dimen/dimen_size_15">
+
+        <LinearLayout
+            android:paddingTop="@dimen/dimen_size_15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/search_event_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_search_gray"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_size_10"
+                android:paddingRight="@dimen/dimen_size_10"
+                android:paddingTop="@dimen/dimen_size_8"
+                android:paddingBottom="@dimen/dimen_size_8"
+                android:transitionName="@string/trans_anim_search_layout">
+
+                <ImageView
+                    android:id="@+id/search_event_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/search_icon"
+                    android:transitionName="@string/trans_anim_search_iv"/>
+
+                <EditText
+                    android:id="@+id/search_event_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_size_5"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:hint="输入搜索美食关键字"
+                    android:textColorHint="#999999"
+                    android:ellipsize="end"
+                    android:textColor="#FF000000"
+                    android:textSize="@dimen/font_size_13"
+                    android:transitionName="@string/trans_anim_search_edit"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

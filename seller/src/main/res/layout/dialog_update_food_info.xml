@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/add_food_img"
+        android:background="#ffffff"
+        android:src="@drawable/add"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <EditText
+        android:layout_margin="@dimen/dimen_size_10"
+        android:id="@+id/add_food_name"
+        android:hint="请输入菜品名"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_margin="@dimen/dimen_size_10"
+        android:id="@+id/add_food_description"
+        android:hint="请输入菜品描述"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_margin="@dimen/dimen_size_10"
+        android:id="@+id/add_food_price"
+        android:hint="请输入价格"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/btn_submit_food_info"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="确 认"
+            android:textSize="@dimen/dimen_size_18"
+            android:layout_marginLeft="@dimen/dimen_size_20"
+            android:layout_marginRight="@dimen/dimen_size_20"
+            android:background="@drawable/btn_solid"/>
+
+
+
+</LinearLayout>
